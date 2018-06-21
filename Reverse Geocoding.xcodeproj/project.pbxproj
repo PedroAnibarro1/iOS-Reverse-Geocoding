@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		C6DBF6D320DBB9EA00D55A2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DBF6D220DBB9EA00D55A2E /* AppDelegate.swift */; };
-		C6DBF6D520DBB9EA00D55A2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DBF6D420DBB9EA00D55A2E /* ViewController.swift */; };
+		C6DBF6D520DBB9EA00D55A2E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DBF6D420DBB9EA00D55A2E /* MapViewController.swift */; };
 		C6DBF6D820DBB9EA00D55A2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6DBF6D620DBB9EA00D55A2E /* Main.storyboard */; };
 		C6DBF6DA20DBB9EB00D55A2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6DBF6D920DBB9EB00D55A2E /* Assets.xcassets */; };
 		C6DBF6DD20DBB9EB00D55A2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6DBF6DB20DBB9EB00D55A2E /* LaunchScreen.storyboard */; };
+		C6DBF6ED20DBE78800D55A2E /* CurrentLocationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DBF6EC20DBE78800D55A2E /* CurrentLocationButton.swift */; };
+		C6DBF6EF20DBEC3E00D55A2E /* GeocodingStyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DBF6EE20DBEC3E00D55A2E /* GeocodingStyleKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C6DBF6CF20DBB9EA00D55A2E /* Reverse Geocoding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Reverse Geocoding.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6DBF6D220DBB9EA00D55A2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C6DBF6D420DBB9EA00D55A2E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C6DBF6D420DBB9EA00D55A2E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		C6DBF6D720DBB9EA00D55A2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C6DBF6D920DBB9EB00D55A2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6DBF6DC20DBB9EB00D55A2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6DBF6DE20DBB9EC00D55A2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6DBF6EC20DBE78800D55A2E /* CurrentLocationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationButton.swift; sourceTree = "<group>"; };
+		C6DBF6EE20DBEC3E00D55A2E /* GeocodingStyleKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GeocodingStyleKit.swift; path = "Reverse Geocoding/GeocodingStyleKit.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +59,31 @@
 			isa = PBXGroup;
 			children = (
 				C6DBF6D220DBB9EA00D55A2E /* AppDelegate.swift */,
-				C6DBF6D420DBB9EA00D55A2E /* ViewController.swift */,
+				C6DBF6D420DBB9EA00D55A2E /* MapViewController.swift */,
 				C6DBF6D620DBB9EA00D55A2E /* Main.storyboard */,
+				C6DBF6EB20DBE72C00D55A2E /* Views */,
+				C6DBF6EA20DBE71D00D55A2E /* Utils */,
 				C6DBF6D920DBB9EB00D55A2E /* Assets.xcassets */,
 				C6DBF6DB20DBB9EB00D55A2E /* LaunchScreen.storyboard */,
 				C6DBF6DE20DBB9EC00D55A2E /* Info.plist */,
 			);
 			path = "Reverse Geocoding";
+			sourceTree = "<group>";
+		};
+		C6DBF6EA20DBE71D00D55A2E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C6DBF6EE20DBEC3E00D55A2E /* GeocodingStyleKit.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C6DBF6EB20DBE72C00D55A2E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C6DBF6EC20DBE78800D55A2E /* CurrentLocationButton.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +157,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6DBF6D520DBB9EA00D55A2E /* ViewController.swift in Sources */,
+				C6DBF6D520DBB9EA00D55A2E /* MapViewController.swift in Sources */,
+				C6DBF6ED20DBE78800D55A2E /* CurrentLocationButton.swift in Sources */,
+				C6DBF6EF20DBEC3E00D55A2E /* GeocodingStyleKit.swift in Sources */,
 				C6DBF6D320DBB9EA00D55A2E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
