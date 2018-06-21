@@ -15,6 +15,7 @@ class MapViewController: UIViewController {
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var addressContainerView: UIView!
     @IBOutlet weak var addressLabel: UILabel!
+    @IBOutlet weak var currentLocationButton: UIButton!
     
     // MARK: - Actions
     @IBAction func currentLocationButtonAction(_ sender: Any) {
@@ -47,6 +48,10 @@ class MapViewController: UIViewController {
         
         // Set round corners to coordinates container view
         self.addressContainerView.layer.cornerRadius = 10.0
+        
+        // Set current location button layout
+        self.currentLocationButton.setTitle(nil, for: .normal)
+        self.currentLocationButton.setImage(GeocodingStyleKit.imageOfLocationIcon, for: .normal)
         
         // Set initial coordinates message
         self.pinAddress = "Move the map around 🌎"

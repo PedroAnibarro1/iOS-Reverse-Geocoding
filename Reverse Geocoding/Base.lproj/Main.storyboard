@@ -48,7 +48,7 @@
                                     <constraint firstAttribute="bottom" secondItem="IT3-O1-yIc" secondAttribute="bottom" constant="20" id="zyX-bo-x34"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIX-CN-tbS" customClass="CurrentLocationButton" customModule="Reverse_Geocoding" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIX-CN-tbS">
                                 <rect key="frame" x="244" y="748" width="115" height="30"/>
                                 <state key="normal" title="Current Location"/>
                                 <connections>
@@ -76,6 +76,7 @@
                     <connections>
                         <outlet property="addressContainerView" destination="VEl-Nw-rhS" id="Dzc-mH-ic2"/>
                         <outlet property="addressLabel" destination="IT3-O1-yIc" id="1Jj-zm-Wwv"/>
+                        <outlet property="currentLocationButton" destination="yIX-CN-tbS" id="lYk-1G-pNL"/>
                         <outlet property="mapView" destination="3nc-xu-yRa" id="MuB-QK-7wb"/>
                     </connections>
                 </viewController>
